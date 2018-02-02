@@ -1,5 +1,9 @@
 var callBackKeyDown = function (element) {
-  switch (event.keyCode) {
+  console.log(element);
+};
+
+var hisEventKeydown = function (e) {
+  switch (e.keyCode) {
     case keynavigator.KEYS.ENTER:
       break;
     case keynavigator.KEYS.TAB:
@@ -7,9 +11,6 @@ var callBackKeyDown = function (element) {
     case keynavigator.KEYS.SPACE:
       break;
   }
-};
-
-var hisEventKeydown = function (e) {
   return true;
 };
 
